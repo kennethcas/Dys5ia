@@ -69,5 +69,8 @@ public class MCwalking : MonoBehaviour
     {
         playerBody.velocity = new Vector2(speedX, speedY);
     }
+
+
+
 }
 
