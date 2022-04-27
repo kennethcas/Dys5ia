@@ -7,65 +7,66 @@ public class MCwalking : MonoBehaviour
 
     public GameObject playerObject;
     public Rigidbody2D playerBody;
-    int speedVar = 5; //how fast player moves
+    public int speedVar = 5; //how fast player moves
     public SpriteRenderer playerSprite;
     public Animator playerWalk;
-    bool walking;
+
 
 
     void FixedUpdate()
     {
 
         checkKeys();
-        
-        if (!walking)
-        {
-            playerWalk.SetBool("isWalking", false);
-        }
-        else if (walking)
+
+        checkWalk();
+
+
+    }
+
+
+    void checkKeys() //checks for player input and sets movement
+    {
+        float horiMove;
+        horiMove = Input.GetAxis("Horizontal") * speedVar;
+
+        float vertMove;
+        vertMove = Input.GetAxis("Vertical") * speedVar;
+       
+        playerMove(horiMove, vertMove);
+
+
+    }
+
+
+    void checkWalk() //sets walking animation
+    {
+        if (Mathf.Abs(playerBody.velocity.x) > 0.01)
         {
             playerWalk.SetBool("isWalking", true);
         }
-
-        walking = false;
-
-
-    }
-
-
-    void checkKeys()
-    {
-
-        if (Input.GetKey(KeyCode.DownArrow))
+        else if (Mathf.Abs(playerBody.velocity.y) > 0.01)
         {
-            playerMove(0, -speedVar);
+            playerWalk.SetBool("isWalking", true);
         }
         else
-        if (Input.GetKey(KeyCode.UpArrow))
         {
-            playerMove(0, speedVar);
+            playerWalk.SetBool("isWalking", false);
         }
 
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if(playerBody.velocity.x < 0)
         {
-            playerMove(-speedVar, 0);
             playerSprite.flipX = false;
-        }
-        else
-        if (Input.GetKey(KeyCode.RightArrow))
+        } else if (playerBody.velocity.x > 0)
         {
-            playerMove(speedVar, 0);
             playerSprite.flipX = true;
         }
 
-
     }
 
 
-    void playerMove(int speedX, int speedY)
+    void playerMove(float speedX, float speedY) //movement itself
     {
-        walking = true;
         playerBody.velocity = new Vector2(speedX, speedY);
     }
 }

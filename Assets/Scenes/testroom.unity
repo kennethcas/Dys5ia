@@ -429,6 +429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerObject: {fileID: 456470091}
   playerBody: {fileID: 456470096}
+  speedVar: 10
   playerSprite: {fileID: 456470093}
   playerWalk: {fileID: 456470092}
 --- !u!50 &456470096
@@ -442,10 +443,10 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
+  m_UseAutoMass: 1
   m_Mass: 1
-  m_LinearDrag: 10
-  m_AngularDrag: 0
+  m_LinearDrag: 5.81
+  m_AngularDrag: 1
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
