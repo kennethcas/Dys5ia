@@ -15,69 +15,58 @@ public class MCwalking : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
-            playerMove(0, -speedVar);
-            walking = true;
-        } else
-        {
-            walking = false;
-        }
 
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            playerMove(0, speedVar);
-            walking = true;
-        }
-        else
-        {
-            walking = false;
-        }
-
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            playerMove(-speedVar, 0);
-            spriteAnimLR(false);
-            walking = true;
-        }
-        else
-        {
-            walking = false;
-        }
-
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            playerMove(speedVar, 0);
-            spriteAnimLR(true);
-            walking = true;
-        }
-        else
-        {
-            walking = false;
-        }
-
-
+        checkKeys();
+        
         if (!walking)
         {
             playerWalk.SetBool("isWalking", false);
-        } else if (walking)
+        }
+        else if (walking)
         {
             playerWalk.SetBool("isWalking", true);
         }
 
-        
-        
+        walking = false;
+
+
+    }
+
+
+    void checkKeys()
+    {
+
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            playerMove(0, -speedVar);
+        }
+        else
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            playerMove(0, speedVar);
+        }
+
+
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            playerMove(-speedVar, 0);
+            playerSprite.flipX = false;
+        }
+        else
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            playerMove(speedVar, 0);
+            playerSprite.flipX = true;
+        }
+
 
     }
 
 
     void playerMove(int speedX, int speedY)
     {
+        walking = true;
         playerBody.velocity = new Vector2(speedX, speedY);
     }
-
-    void spriteAnimLR(bool flipped) //controls sprite changes for left right movement
-    {
-        playerSprite.flipX = flipped;
-    }
 }
+
