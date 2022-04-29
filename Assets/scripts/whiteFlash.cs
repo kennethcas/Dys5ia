@@ -6,7 +6,7 @@ public class whiteFlash : MonoBehaviour
 {
     private void endAnim()
     {
-        Destroy(gameObject);
+        gameObject.GetComponent<Animator>().SetBool("playerCol", false);
     }
     
 }

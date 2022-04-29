@@ -10,6 +10,13 @@ public class MCwalking : MonoBehaviour
     public int speedVar = 5; //how fast player moves
     public SpriteRenderer playerSprite;
     public Animator playerWalk;
+    Vector3 startPos;
+
+
+    private void Start()
+    {
+        startPos = gameObject.transform.position;
+    }
 
 
 
@@ -70,7 +77,14 @@ public class MCwalking : MonoBehaviour
         playerBody.velocity = new Vector2(speedX, speedY);
     }
 
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "SFX")
+        {
+            collision.gameObject.GetComponent<Animator>().SetBool("playerCol", true);
+            gameObject.transform.position = startPos;
+        }
+    }
 
 }
 
