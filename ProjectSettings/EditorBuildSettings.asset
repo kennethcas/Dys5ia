@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/PT 1/girls.unity
+    guid: 995bb106164b422438ed21317bc00dca
+  - enabled: 1
+    path: Assets/Scenes/PT 1/boys.unity
+    guid: 4f7d24843e31317459baa66e3677a9ea
+  - enabled: 1
+    path: Assets/Scenes/PT 1/wish.unity
+    guid: 5cdbd808690745a4d9c23fe8880f60cc
   m_configObjects: {}
