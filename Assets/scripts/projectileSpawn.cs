@@ -16,7 +16,7 @@ public class projectileSpawn : MonoBehaviour
         countdown = countdown + 1;
         if (countdown > startCountdown)
         {
-            spawnIn(waitTime);
+            randomizeSprite();
             countdown = 0;
         }
     }
