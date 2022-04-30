@@ -7,6 +7,7 @@ TagManager:
   - Background
   - worldbounds
   - SFX
+  - MusicManager
   layers:
   - Default
   - TransparentFX

@@ -9,8 +9,9 @@ public class MCwalking : MonoBehaviour
     public Rigidbody2D playerBody;
     public int speedVar = 5; //how fast player moves
     public SpriteRenderer playerSprite;
-    public Animator playerWalk;
-    Vector3 startPos;
+    public Animator playerWalk; //walk anim
+    public AudioSource playerNoise; //controls beep noise
+    Vector3 startPos; //holds starting position
 
 
     private void Start()
@@ -45,7 +46,7 @@ public class MCwalking : MonoBehaviour
     }
 
 
-    void checkWalk() //sets walking animation
+    void checkWalk() //sets walking animation and direction
     {
         if (Mathf.Abs(playerBody.velocity.x) > 0.01)
         {
@@ -81,8 +82,9 @@ public class MCwalking : MonoBehaviour
     {
         if(collision.gameObject.tag == "SFX")
         {
-            collision.gameObject.GetComponent<Animator>().SetBool("playerCol", true);
-            gameObject.transform.position = startPos;
+            collision.gameObject.GetComponent<Animator>().SetBool("playerCol", true); //call flash
+            playerNoise.Play(); //play noise
+            gameObject.transform.position = startPos; //reset player pos
         }
     }
 
