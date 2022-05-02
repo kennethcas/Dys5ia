@@ -8,6 +8,11 @@ TagManager:
   - worldbounds
   - SFX
   - MusicManager
+  - exitTrigger
+  - stuTrig1
+  - stuTrig2
+  - stuTrig3
+  - stuTrig4
   layers:
   - Default
   - TransparentFX
