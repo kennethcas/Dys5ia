@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class WrongLevelTriggers : MonoBehaviour
 {
+    private BoxCollider collision;
     [Header("Triggers")]
     public GameObject student1Trigger;
     public GameObject student2Trigger;
@@ -20,20 +21,34 @@ public class WrongLevelTriggers : MonoBehaviour
 
     private void Awake()
     {
+        collision = GetComponent<BoxCollider>();
         student1Cue.SetActive(false);
         student2Cue.SetActive(false);
         student3Cue.SetActive(false);
         student4Cue.SetActive(false);
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
+        // SETTING ACTIVE CUES
         if(collision.gameObject.tag == "stuTrig1")
         {
             student1Cue.SetActive(true);
         }
+        if (collision.gameObject.tag == "stuTrig2")
+        {
+            student2Cue.SetActive(true);
+        }
+        if (collision.gameObject.tag == "stuTrig3")
+        {
+            student3Cue.SetActive(true);
+        }
+        if (collision.gameObject.tag == "stuTrig4")
+        {
+            student4Cue.SetActive(true);
+        }
 
-        if (collision.gameObject.tag == "exitTrigger")
+        if (collision.gameObject.tag == "exitTrig")
         {
             Debug.Log("colliding with exit trigger");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

@@ -7,7 +7,7 @@ public class MCwalking : MonoBehaviour
 
     public GameObject playerObject;
     public Rigidbody2D playerBody;
-    public int speedVar = 5; //how fast player moves
+    public float speedVar = 5.0f; //how fast player moves
 
     public SpriteRenderer playerSprite;
     public Animator playerWalk; //walk anim

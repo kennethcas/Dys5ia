@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - clothes
+  - Undefined
+  - stuTrig1
+  - stuTrig2
+  - stuTrig3
+  - stuTrig4
+  - exitTrig
   layers:
   - Default
   - TransparentFX
