@@ -26,7 +26,7 @@ public class WrongLevelTriggers : MonoBehaviour
         student4Cue.SetActive(false);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "stuTrig1")
         {
@@ -35,6 +35,7 @@ public class WrongLevelTriggers : MonoBehaviour
 
         if (collision.gameObject.tag == "exitTrigger")
         {
+            Debug.Log("colliding with exit trigger");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
