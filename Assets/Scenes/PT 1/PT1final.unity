@@ -350,7 +350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomClock: 3
-  roomName: Main
+  roomName: 1-wrong
 --- !u!4 &71280158
 Transform:
   m_ObjectHideFlags: 0

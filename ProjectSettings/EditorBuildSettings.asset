@@ -21,6 +21,15 @@ EditorBuildSettings:
     path: Assets/Scenes/PT 1/PT1final.unity
     guid: 74fa8dc5af867c046894e197a7ab35db
   - enabled: 1
+    path: Assets/Scenes/PT 2/1-wrong.unity
+    guid: 7da400c40a324f440bcf2849d7827144
+  - enabled: 1
+    path: Assets/Scenes/PT3/clothes.unity
+    guid: 4ddb24a1554bc6841b64051e8be7447e
+  - enabled: 1
+    path: Assets/Scenes/PT3/posTalk.unity
+    guid: fda86bf15bdc3ac45ac587346da71070
+  - enabled: 0
     path: Assets/Scenes/Main.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}

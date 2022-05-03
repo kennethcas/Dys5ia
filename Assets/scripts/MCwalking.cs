@@ -8,12 +8,21 @@ public class MCwalking : MonoBehaviour
     public GameObject playerObject;
     public Rigidbody2D playerBody;
     public int speedVar = 5; //how fast player moves
+
     public SpriteRenderer playerSprite;
     public Animator playerWalk; //walk anim
+
     public AudioSource playerNoise; //controls beep noise
+    
     Vector3 startPos; //holds starting position
+
     public GameObject smileyObj;
     public AudioSource pickupNoise;
+
+    public ParticleSystem winParts;
+    int pickupCounter;
+    public AudioSource pickupWin;
+
 
     private void Start()
     {
@@ -21,14 +30,17 @@ public class MCwalking : MonoBehaviour
     }
 
 
-
+  
     void FixedUpdate()
     {
-
+        
         checkKeys();
 
         checkWalk();
 
+        checkPickups();
+
+        Debug.Log(pickupCounter);
 
     }
 
@@ -105,8 +117,22 @@ public class MCwalking : MonoBehaviour
     {
         GameObject smiley = Instantiate(smileyObj);
         smiley.transform.localPosition = new Vector3(clothes.gameObject.transform.position.x, clothes.gameObject.transform.position.y, clothes.gameObject.transform.position.z);
-
+        pickupCounter += 1;
     }
+
+
+
+    void checkPickups()
+    {
+        if(pickupCounter == 4)
+        {
+            winParts.Play();
+            pickupWin.Play();
+            pickupCounter += 1;
+        }
+    }
+
+
 
 }
 

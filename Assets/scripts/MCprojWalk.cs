@@ -13,6 +13,15 @@ public class MCprojWalk : MonoBehaviour
     public AudioSource playerNoise; //controls beep noise 
     Vector3 startPos;
 
+    public GameObject smileyObj;
+    public AudioSource pickupNoise;
+
+
+    public ParticleSystem winParts;
+    int pickupCounter;
+    public AudioSource pickupWin;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -71,6 +80,37 @@ public class MCprojWalk : MonoBehaviour
             Destroy(collision.gameObject);
             FindObjectOfType<whiteFlash>().GetComponent<Animator>().SetBool("playerCol", true);
         }
+
+        if (collision.gameObject.tag == "clothes")
+        {
+            smileySpawn(collision.gameObject);
+            pickupNoise.Play();
+            Destroy(collision.gameObject);
+        }
+
     }
+
+
+    void smileySpawn(GameObject clothes)
+    {
+        GameObject smiley = Instantiate(smileyObj);
+        smiley.transform.localPosition = new Vector3(clothes.gameObject.transform.position.x, clothes.gameObject.transform.position.y, clothes.gameObject.transform.position.z);
+        pickupCounter += 1;
+    }
+
+    void checkPickups()
+    {
+        if (pickupCounter == 4)
+        {
+            winParts.Play();
+            pickupWin.Play();
+            pickupCounter += 1;
+        }
+    }
+
+
+
+
+
 
 }
