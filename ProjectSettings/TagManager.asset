@@ -8,11 +8,15 @@ TagManager:
   - worldbounds
   - SFX
   - MusicManager
+<<<<<<< Updated upstream
   - exitTrigger
   - stuTrig1
   - stuTrig2
   - stuTrig3
   - stuTrig4
+=======
+  - clothes
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX

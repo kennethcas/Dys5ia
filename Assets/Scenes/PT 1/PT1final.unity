@@ -1231,7 +1231,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'things feel
 
-    different.'
+    different.
+
+    maybe its just me.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cef715d19e6fdc74b86abd9df0aaf988, type: 2}
   m_sharedMaterial: {fileID: -6022002789061517140, guid: cef715d19e6fdc74b86abd9df0aaf988, type: 2}

@@ -12,7 +12,8 @@ public class MCwalking : MonoBehaviour
     public Animator playerWalk; //walk anim
     public AudioSource playerNoise; //controls beep noise
     Vector3 startPos; //holds starting position
-
+    public GameObject smileyObj;
+    public AudioSource pickupNoise;
 
     private void Start()
     {
@@ -86,6 +87,25 @@ public class MCwalking : MonoBehaviour
             playerNoise.Play(); //play noise
             gameObject.transform.position = startPos; //reset player pos
         }
+
+        if(collision.gameObject.tag == "clothes")
+        {
+            smileySpawn(collision.gameObject);
+            pickupNoise.Play(); 
+            Destroy(collision.gameObject);
+        }
+
+
+
+
+    }
+
+
+    void smileySpawn(GameObject clothes)
+    {
+        GameObject smiley = Instantiate(smileyObj);
+        smiley.transform.localPosition = new Vector3(clothes.gameObject.transform.position.x, clothes.gameObject.transform.position.y, clothes.gameObject.transform.position.z);
+
     }
 
 }
