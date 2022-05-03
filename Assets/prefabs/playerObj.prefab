@@ -126,6 +126,10 @@ MonoBehaviour:
   playerSprite: {fileID: 2870618133426830147}
   playerWalk: {fileID: 2870618133426830146}
   playerNoise: {fileID: 2870618133426830173}
+  smileyObj: {fileID: 4553763108843726264, guid: 47b8a46c93ef8fd448631ad60565f703, type: 3}
+  pickupNoise: {fileID: 0}
+  winParts: {fileID: 0}
+  pickupWin: {fileID: 0}
 --- !u!50 &2870618133426830174
 Rigidbody2D:
   serializedVersion: 4
