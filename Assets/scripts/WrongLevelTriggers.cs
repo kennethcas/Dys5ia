@@ -33,6 +33,7 @@ public class WrongLevelTriggers : MonoBehaviour
         // SETTING ACTIVE CUES
         if(collision.gameObject.tag == "stuTrig1")
         {
+            Debug.Log("colliding with stuTrig1");
             student1Cue.SetActive(true);
         }
         if (collision.gameObject.tag == "stuTrig2")
