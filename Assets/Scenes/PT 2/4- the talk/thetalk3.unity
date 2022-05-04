@@ -2004,8 +2004,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: whats bothering you?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cef715d19e6fdc74b86abd9df0aaf988, type: 2}
-  m_sharedMaterial: {fileID: -6022002789061517140, guid: cef715d19e6fdc74b86abd9df0aaf988, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dd6a640ca8e7e594bb2058a8e9eb4f61, type: 2}
+  m_sharedMaterial: {fileID: 8945121923781227258, guid: dd6a640ca8e7e594bb2058a8e9eb4f61, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2035,7 +2035,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 16
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535

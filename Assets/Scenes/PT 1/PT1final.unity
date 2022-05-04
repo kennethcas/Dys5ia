@@ -1041,7 +1041,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8361322750632614297, guid: 7a2e0007acccb9e4f9759a966248050e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.11
+      value: 16.25
       objectReference: {fileID: 0}
     - target: {fileID: 8361322750632614297, guid: 7a2e0007acccb9e4f9759a966248050e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1206,8 +1206,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000014782, y: 0.00000047684}
-  m_SizeDelta: {x: 280.64, y: 39.83}
+  m_AnchoredPosition: {x: -0.0000014305, y: -4.1}
+  m_SizeDelta: {x: 168.77, y: 107.36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1118752582
 MonoBehaviour:
@@ -1229,14 +1229,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'things feel
+  m_text: 'things feel different.
 
-    different.
 
     maybe its just me.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cef715d19e6fdc74b86abd9df0aaf988, type: 2}
-  m_sharedMaterial: {fileID: -6022002789061517140, guid: cef715d19e6fdc74b86abd9df0aaf988, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dd6a640ca8e7e594bb2058a8e9eb4f61, type: 2}
+  m_sharedMaterial: {fileID: 8945121923781227258, guid: dd6a640ca8e7e594bb2058a8e9eb4f61, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1266,7 +1265,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 16
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535

@@ -592,7 +592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8361322750632614297, guid: 7a2e0007acccb9e4f9759a966248050e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.65
+      value: 14.61
       objectReference: {fileID: 0}
     - target: {fileID: 8361322750632614297, guid: 7a2e0007acccb9e4f9759a966248050e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1125,8 +1125,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: people always say weird stuff about me.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cef715d19e6fdc74b86abd9df0aaf988, type: 2}
-  m_sharedMaterial: {fileID: -6022002789061517140, guid: cef715d19e6fdc74b86abd9df0aaf988, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dd6a640ca8e7e594bb2058a8e9eb4f61, type: 2}
+  m_sharedMaterial: {fileID: 8945121923781227258, guid: dd6a640ca8e7e594bb2058a8e9eb4f61, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1156,7 +1156,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 16
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -1614,6 +1614,10 @@ MonoBehaviour:
   playerSprite: {fileID: 2016580002}
   playerWalk: {fileID: 2016580001}
   playerNoise: {fileID: 2016580004}
+  smileyObj: {fileID: 0}
+  pickupNoise: {fileID: 0}
+  winParts: {fileID: 0}
+  pickupWin: {fileID: 0}
 --- !u!95 &2016580001
 Animator:
   serializedVersion: 3

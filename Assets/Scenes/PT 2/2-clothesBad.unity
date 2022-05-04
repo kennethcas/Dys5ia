@@ -1403,6 +1403,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: flash
       objectReference: {fileID: 0}
+    - target: {fileID: 347893634437757496, guid: 0a92e602ddc0d234f8e920d5e96b10dd, type: 3}
+      propertyPath: m_Size.y
+      value: 0.7504263
+      objectReference: {fileID: 0}
+    - target: {fileID: 347893634437757496, guid: 0a92e602ddc0d234f8e920d5e96b10dd, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.12478684
+      objectReference: {fileID: 0}
     - target: {fileID: 347893634437757498, guid: 0a92e602ddc0d234f8e920d5e96b10dd, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -2088,7 +2096,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3704399e15636043aab3eaea3dc288b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomClock: 30
+  roomClock: 8
   roomName: 3-maze
 --- !u!4 &1080501274
 Transform:

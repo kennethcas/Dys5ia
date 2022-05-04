@@ -756,6 +756,10 @@ MonoBehaviour:
   playerSprite: {fileID: 576382914}
   playerWalk: {fileID: 576382913}
   playerNoise: {fileID: 576382916}
+  smileyObj: {fileID: 0}
+  pickupNoise: {fileID: 0}
+  winParts: {fileID: 0}
+  pickupWin: {fileID: 0}
 --- !u!95 &576382913
 Animator:
   serializedVersion: 3
@@ -1607,7 +1611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8361322750632614297, guid: 7a2e0007acccb9e4f9759a966248050e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.68198013
+      value: 15.99
       objectReference: {fileID: 0}
     - target: {fileID: 8361322750632614297, guid: 7a2e0007acccb9e4f9759a966248050e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2205,8 +2209,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00000095367, y: -99.2}
-  m_SizeDelta: {x: 217.32, y: 51.51}
+  m_AnchoredPosition: {x: 0, y: -93.1}
+  m_SizeDelta: {x: 250.06, y: 31.05}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1574510767
 MonoBehaviour:
@@ -2230,8 +2234,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: But the boys aren't very nice to me either.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cef715d19e6fdc74b86abd9df0aaf988, type: 2}
-  m_sharedMaterial: {fileID: -6022002789061517140, guid: cef715d19e6fdc74b86abd9df0aaf988, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dd6a640ca8e7e594bb2058a8e9eb4f61, type: 2}
+  m_sharedMaterial: {fileID: 8945121923781227258, guid: dd6a640ca8e7e594bb2058a8e9eb4f61, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2261,7 +2265,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 16
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
