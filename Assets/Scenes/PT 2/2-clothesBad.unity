@@ -2089,7 +2089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomClock: 30
-  roomName: 3-
+  roomName: 3-maze
 --- !u!4 &1080501274
 Transform:
   m_ObjectHideFlags: 0

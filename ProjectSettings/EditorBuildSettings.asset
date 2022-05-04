@@ -24,7 +24,10 @@ EditorBuildSettings:
     path: Assets/Scenes/PT 2/1-wrong.unity
     guid: 7da400c40a324f440bcf2849d7827144
   - enabled: 1
-    path: Assets/Scenes/PT 2/3-.unity
+    path: Assets/Scenes/PT 2/2-clothesBad.unity
+    guid: d1e974754faddce49873630b4aab17b9
+  - enabled: 1
+    path: Assets/Scenes/PT 2/3-maze.unity
     guid: 717d6e98c482ca841a70a00de152e75f
   - enabled: 1
     path: Assets/Scenes/PT3/clothes.unity

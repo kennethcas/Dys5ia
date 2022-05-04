@@ -11,6 +11,10 @@ TagManager:
   - stuTrig3
   - stuTrig4
   - exitTrig
+  - SFX
+  - worldbounds
+  - Background
+  - brick
   layers:
   - Default
   - TransparentFX
