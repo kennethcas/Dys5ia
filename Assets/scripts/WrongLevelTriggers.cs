@@ -19,6 +19,9 @@ public class WrongLevelTriggers : MonoBehaviour
     public GameObject student3Cue;  
     public GameObject student4Cue;
 
+    public AudioSource winNoise;
+    public ParticleSystem winParticles;
+
     private void Awake()
     {
         collision = GetComponent<BoxCollider>();
@@ -47,6 +50,8 @@ public class WrongLevelTriggers : MonoBehaviour
         if (collision.gameObject.tag == "stuTrig4")
         {
             student4Cue.SetActive(true);
+            winNoise.Play();
+            winParticles.Play();
         }
 
         if (collision.gameObject.tag == "exitTrig")
