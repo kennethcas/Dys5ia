@@ -1295,8 +1295,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3704399e15636043aab3eaea3dc288b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomClock: 8
-  roomName: clothes
+  roomClock: 10
+  roomName: thetalk
 --- !u!4 &996611084
 Transform:
   m_ObjectHideFlags: 0

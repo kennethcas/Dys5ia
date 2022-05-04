@@ -30,6 +30,18 @@ EditorBuildSettings:
     path: Assets/Scenes/PT 2/3-maze.unity
     guid: 717d6e98c482ca841a70a00de152e75f
   - enabled: 1
+    path: Assets/Scenes/PT3/the talk/thetalk.unity
+    guid: 0582cba15de898c48a6359625def9126
+  - enabled: 1
+    path: Assets/Scenes/PT3/the talk/thetalk2.unity
+    guid: a8e465457019c954ba310a8e4b23bca4
+  - enabled: 1
+    path: Assets/Scenes/PT3/the talk/thetalk3.unity
+    guid: c07483352633ef14eaf886c99d77f100
+  - enabled: 1
+    path: Assets/Scenes/PT3/the talk/thetalk4.unity
+    guid: aab2c87d59372ee41a58633f1d88ed79
+  - enabled: 1
     path: Assets/Scenes/PT3/clothes.unity
     guid: 4ddb24a1554bc6841b64051e8be7447e
   - enabled: 1

@@ -34,6 +34,7 @@ public class MCprojWalk : MonoBehaviour
     {
         checkKeys();
         checkWalk();
+        checkPickups();
         gameObject.transform.position = new Vector3(startPos.x, gameObject.transform.position.y, gameObject.transform.position.z);
     }
 

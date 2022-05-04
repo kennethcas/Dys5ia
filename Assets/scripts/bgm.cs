@@ -6,6 +6,8 @@ public class bgm : MonoBehaviour
 {
     private void Awake()
     {
+        DontDestroyOnLoad(this.gameObject);
+
         GameObject[] musicObj = GameObject.FindGameObjectsWithTag("MusicManager"); //look for multiple music managers if there are any 
 
         if(musicObj.Length > 1) //if there are more than one
@@ -13,7 +15,7 @@ public class bgm : MonoBehaviour
             Destroy(this.gameObject); //destroy until it gets to one
         }
 
-        DontDestroyOnLoad(this.gameObject);
+        
 
     }
 }
