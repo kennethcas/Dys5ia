@@ -953,7 +953,7 @@ MonoBehaviour:
   - {fileID: -1687144669380700377, guid: 7b8a9399d31eaac478e9cb8ca7281036, type: 3}
   - {fileID: -2892819179972619951, guid: 7b8a9399d31eaac478e9cb8ca7281036, type: 3}
   - {fileID: 4748470198486955293, guid: 7b8a9399d31eaac478e9cb8ca7281036, type: 3}
-  waitTime: 1
+  waitTime: 0.5
   countdown: 0
   startCountdown: 200
 --- !u!1 &1243967502
