@@ -1610,7 +1610,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerObject: {fileID: 2016579996}
   playerBody: {fileID: 2016579999}
-  speedVar: 10
+  speedVar: 8
   playerSprite: {fileID: 2016580002}
   playerWalk: {fileID: 2016580001}
   playerNoise: {fileID: 2016580004}
