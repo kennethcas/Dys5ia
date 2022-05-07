@@ -18,15 +18,7 @@ public class projectileSpawn : MonoBehaviour
         {
             randomizeSprite();
             countdown = 0;
-        }
-    }
-
-
-    IEnumerator spawnIn(float waitTime)
-    {
-        yield return new WaitForSecondsRealtime(waitTime);
-        Time.timeScale = 1.0f;
-        randomizeSprite();
+        } 
     }
 
 
