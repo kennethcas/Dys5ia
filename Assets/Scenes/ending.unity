@@ -290,8 +290,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3101f4c182b2cf1448a242c98507c65b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 500
+  waitTime: 200
   fadeIn: {fileID: 49883033}
+  endTime: 800
 --- !u!1001 &95763300
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -447,51 +448,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &622696146
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 622696148}
-  - component: {fileID: 622696147}
-  m_Layer: 0
-  m_Name: timeManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &622696147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 622696146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3704399e15636043aab3eaea3dc288b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roomClock: 11
-  roomName: smileyroom
---- !u!4 &622696148
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 622696146}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.9824113, y: 0.5137107, z: -37.165863}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &689106511
 GameObject:
@@ -660,8 +616,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3101f4c182b2cf1448a242c98507c65b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 1500
+  waitTime: 600
   fadeIn: {fileID: 689106515}
+  endTime: 800
 --- !u!1 &779833802
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,8 +786,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3101f4c182b2cf1448a242c98507c65b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 250
+  waitTime: 100
   fadeIn: {fileID: 779833806}
+  endTime: 800
 --- !u!1 &956675809
 GameObject:
   m_ObjectHideFlags: 0
@@ -1186,8 +1144,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3101f4c182b2cf1448a242c98507c65b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 1250
+  waitTime: 500
   fadeIn: {fileID: 1053213940}
+  endTime: 800
 --- !u!1 &1112433389
 GameObject:
   m_ObjectHideFlags: 0
@@ -1578,8 +1537,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3101f4c182b2cf1448a242c98507c65b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 1000
+  waitTime: 400
   fadeIn: {fileID: 1282008331}
+  endTime: 800
 --- !u!1 &1317042861
 GameObject:
   m_ObjectHideFlags: 0
@@ -1747,8 +1707,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3101f4c182b2cf1448a242c98507c65b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 750
+  waitTime: 300
   fadeIn: {fileID: 1317042865}
+  endTime: 800
 --- !u!1 &1684891417
 GameObject:
   m_ObjectHideFlags: 0
@@ -2177,5 +2138,5 @@ Transform:
   - {fileID: 1131001415}
   - {fileID: 1930168979}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
