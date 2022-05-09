@@ -477,7 +477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3704399e15636043aab3eaea3dc288b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomClock: 8
+  roomClock: 11
   roomName: smileyroom
 --- !u!4 &622696148
 Transform:

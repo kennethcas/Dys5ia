@@ -955,7 +955,7 @@ MonoBehaviour:
   - {fileID: 4748470198486955293, guid: 7b8a9399d31eaac478e9cb8ca7281036, type: 3}
   waitTime: 0.5
   countdown: 0
-  startCountdown: 200
+  startCountdown: 190
 --- !u!1 &1243967502
 GameObject:
   m_ObjectHideFlags: 0
